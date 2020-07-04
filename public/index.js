@@ -8,6 +8,9 @@ const request = window.indexedDB.open("budgetTracker", 1);
 request.onupgradeneeded = ({ target }) => {
   const db = target.result;
   const objectStore = db.createObjectStore("budgetTracker");
+  objectStore.createIndex("icebox", "icebox");
+  objectStore.createIndex("inprogress", "inprogress");
+  objectStore.createIndex("complete", "complete");
 };
 
 request.onsuccess = event => {
