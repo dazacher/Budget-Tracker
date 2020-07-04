@@ -1,6 +1,15 @@
 let transactions = [];
 let myChart;
 
+// Making indexDB
+const request = window.indexedDB.open("budgetTracker", 1);
+
+      request.onsuccess = event => {
+        console.log(request.result.name);
+      };
+
+
+
 fetch("/api/transaction")
   .then(response => {
     return response.json();
