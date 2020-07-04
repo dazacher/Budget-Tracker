@@ -1,24 +1,6 @@
 let transactions = [];
 let myChart;
 
-// Making indexDB
-const request = window.indexedDB.open("budgetTracker", 1);
-
-// Create an object store inside the onupgradeneeded method.
-request.onupgradeneeded = ({ target }) => {
-  const db = target.result;
-  const objectStore = db.createObjectStore("budgetTracker");
-  objectStore.createIndex("icebox", "icebox");
-  objectStore.createIndex("inprogress", "inprogress");
-  objectStore.createIndex("complete", "complete");
-};
-
-request.onsuccess = event => {
-  console.log(request.result.name);
-};
-// End of indexDB
-
-
 fetch("/api/transaction")
   .then(response => {
     return response.json();
