@@ -1,0 +1,19 @@
+language: node_js
+node_js: '12'
+branches:
+  only:
+  - master
+cache:
+  directories:
+  - node_modules
+before_install:
+- npm update
+install:
+- npm install
+git:
+  depth: 100
+deploy:
+  provider: heroku
+  api_key:
+    secure: rZP3D8ljngR7EDY8pm1QDeRCL8JD589BQxFEoe2+1dr4Fha7mQuFQlC7MKmpkDQi7YuRsyaW7wcDJAiMIFFjpBtKzbPeWB6FFSARIF9HfhIfNMvhmt54VpUU2PG1vZOT1d4tXQ63ZPs8a1Shqprc6ruSyeA0oajeqS5J94WZdbyr8y2tHFLuVzteTe+fl0w4xj1ASu9juZRzyF8WtCCcAdi4UamU9WXmTE795kElEjOLLWaevVh6/vfQurGr0DmlH6h9d/BvvCclTME6Y7tTssNIMYLELETYJ8uSA6lO2zbotKEEeW1HijFwbFzaPht6qXBJb0cTYhFMjBag1TmHlFJsZPktkH9suVkYN3xolhaNiC8I/arhFnRtjEM0uf1YWPrGDroRb/MJU6iUDrHR6Y6KpSqH3ckxo69NseHafKzZvum6O9xICLU7opndNQWrnuVOnUs1PFngPp+EC2Yp6c7FSnTdC/VXmGcEZ4/zc2gsfsba3ZfjUV4IBYgIYZKrOQwTVtFMDZfDRY4mLpascmRrp30UocrlE75jjWqoasaJ89CqAbSVS7zEPJ+l7z/vJy0Qz5KN5AxXczATqr5syzbzGzfpR+2M3oEwBYdLQZgk8+eZ91YgXTc/d47FOMTU/kCFR9y19Yq7ybzEvVFQO3D1ac+vesiTr5zKdzqVY1k=
+  app: budget-tracker-das
