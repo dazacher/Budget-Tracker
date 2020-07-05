@@ -20,11 +20,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/budget",
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
-// mongoose.connect("mongodb://user1:password1@ds149335.mlab.com:49335/heroku_103grmvv", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false,
-//   useUnifiedTopology: true
-// });
+
 
 // routes
 app.use(require("./routes/api.js"));
