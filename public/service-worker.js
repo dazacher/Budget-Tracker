@@ -4,6 +4,7 @@ const FILES_TO_CACHE = [
     "/favicon.ico",
     "/manifest.webmanifest",
     "/assets/css/styles.css",
+    "/assets/images/icons/icon-32x32.png",
     "/assets/images/icons/icon-57x57.png",
     "/assets/images/icons/icon-72x72.png",
     "/assets/images/icons/icon-96x96.png",
