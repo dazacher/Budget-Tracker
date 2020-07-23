@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #### Table of Contents
 
 * [Author](#author)
@@ -60,3 +61,7 @@ dazacher2000@yahoo.com
 ### Link
 
 https://budget-tracker-das.herokuapp.com/
+=======
+# Budget-Tracker
+Budget Tracker application is designed to allow for offline access and functionality. The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online. Offline Functionality: * Enter deposits offline* Enter expenses offline. When brought back online: * Offline entries should be added to tracker.
+>>>>>>> 80dfecfe3ed654ca7c928c259aa4a95dbbaf1f4f
